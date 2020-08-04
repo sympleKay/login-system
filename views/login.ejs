@@ -1,0 +1,19 @@
+<%- include ('partials/header') %>
+    <p class="m-5"></p>
+    <div class="container border m-auto w-25">
+        <div class="row mt-5">
+            <div class="col">
+                <h2 class="text-center text-uppercase">login</h2>
+                <%- include ('partials/err_msg') %>
+                <form action="/member/login" method="POST" class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-Mail" required><br/>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </form>
+                <hr class="w-50">
+                <p>Not registered? <a href="/" class="card-link">Sign up now</a></p>
+            </div>
+        </div>
+
+    </div>
+    <%- include ('partials/footer') %>
